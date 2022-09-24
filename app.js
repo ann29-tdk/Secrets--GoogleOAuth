@@ -40,7 +40,7 @@ app.use(passport.session());
 /*           MONGODB WORK             */
 main().catch(err => console.log(err));
 async function main() {
-  await mongoose.connect("mongodb://localhost:27017/userDB", {
+  await mongoose.connect("mongodb+srv://test-anurag:Society2020@cluster0.g2tqnwo.mongodb.net/userDB", {
     useNewUrlParser: true
   });
 }
